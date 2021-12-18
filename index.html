@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet"> 
+    <link rel="icon" type="image/x-icon" href="edit-button.png">
+    <title>Szerkesztő</title>
+</head>
+<body>
+<script src="script.js"></script>    
+    
+    <aside>
+        <h1>Fejléc</h1>
+        <p>Cím:</p>
+        <input id="fejlecCim" type="text">
+        <button onclick="feljlecCimGomb()">Csere</button>
+        <p>Betű szín:</p>
+        <select>
+            <option>---Válassz!--- </option>
+            <option onclick="fejlecFeketeBetu()">fekete</option>
+            <option onclick="fejlecFeherBetu()">fehér</option>
+            <option onclick="fejlecKekBetu()">kék</option>
+            <option onclick="fejlecPirosBetu()">piros</option>
+            <option onclick="fejlecZoldBetu()">zöld</option>
+        </select>
+        <p>Háttérszín:</p>
+        <select>
+            <option>---Válassz!--- </option>
+            <option onclick="fejlecFeherHatter()">fehér</option>
+            <option onclick="fejlecSzurkeHatter()">szürke</option>
+            <option onclick="fejlecKekHatter()">kék</option>
+            <option onclick="fejlecZoldHatter()">zöld</option>
+        </select><br>
+        <h1>Tartalom</h1>
+        <p>Szöveg:</p><br>
+        <div><textarea id="tartalomDobozSzerkeszto" name="" id="" cols="30" rows="10"></textarea></div><br><br>
+        <button onclick="tartalomTartalmaGomb()">Csere</button><br><br><br>
+        <p>Betű szín:</p>
+        <select>
+            <option>---Válassz!--- </option>
+            <option onclick="tartalomFeketeBetu()">fekete</option>
+            <option onclick="tartalomFeherBetu()">fehér</option>
+            <option onclick="tartalomKekBetu()">kék</option>
+            <option onclick="tartalomPirosBetu()">piros</option>
+            <option onclick="tartalomZoldBetu()">zöld</option>
+        </select>
+        <p>Szöveg háttérszíne:</p>
+        <select>
+            <option>---Válassz!--- </option>
+            <option onclick="TartalomFeherSzovegHatter()">fehér</option>
+            <option onclick="TartalomSzurkeSzovegHatter()">szürke</option>
+            <option onclick="TartalomKekSzovegHatter()">kék</option>
+            <option onclick="TartalomZoldSzovegHatter()">zöld</option>
+        </select>
+        <p>Háttérszín:</p>
+        <select>
+            <option>---Válassz!--- </option>
+            <option onclick="TartalomFeherHatter()">fehér</option>
+            <option onclick="TartalomSzurkeHatter()">szürke</option>
+            <option onclick="TartalomKekHatter()">kék</option>
+            <option onclick="TartalomZoldHatter()">zöld</option>
+        </select>
+    </aside>
+    <header>
+        <img id="szerkesztés_gomb" src="edit-button.png" alt="szerkesztés_gomb" onclick="openEditButton()">
+        <img id="bezaras_gomb" src="x-button.png" alt="bezaras_gomb" onclick="closeEdit()" >
+        <div id="fejlecCimDoboz">
+            <h1>Szerkessz!</h1>
+        </div>
+    </header>
+    <main>
+        <section id="szoveg">
+            <p>
+                Ez itt a lényeg, ez kerül a lapra. A html lapon a helyköz (egy vagy több) és a sorvége jel(ek) egyenértékűek, mindegyik egy helyközt ér. Ha nem intézkedünk arról, hol legyen újsor kezdés, akkor a böngésző (idegen szóval "browser") annyi szöveget tesz egy sorba, amennyit bír, és szóhatáron kezd új sort. Azt ami két kacsacsőr ("kisebbjel" és "nagyobbjel") között van, "vezérlésre" használja a böngésző, a többi szöveget megjeleníti. A vezérlés valami parancsot jelent a browsernek, ami pl. mondhatja azt, hogyan jelenítse meg a szöveget, vagy hogy mit jelenítsen még meg. (pl. képet). Tekintse meg az itt következő, csak a bal oldalon látható kommentár sorokat.
+            </p>
+        </section>
+    </main>
+    
+    
+    
+
+</body>
+</html>
